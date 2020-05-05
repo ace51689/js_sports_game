@@ -18,52 +18,25 @@ const resetButton = document.querySelector('#reset-button')
 const numResets = document.querySelector('#num-resets')
 
 // Reset Button Events
-{
+
 let count = 0
 resetButton.addEventListener('click', function() {
-    let oneShots = 0
-    let twoShots = 0
-    let oneGoals = 0
-    let twoGoals = 0
-    let x = Math.random()
+    oneShots = 0
+    twoShots = 0
+    oneGoals = 0
+    twoGoals = 0
     // console.log('You clicked the reset button')
     numResets.innerText = (count = count +1)
     teamOneShots.innerText = 0
     teamOneGoals.innerText = 0 
     teamTwoShots.innerText = 0
     teamTwoGoals.innerText = 0
-
-    teamOneButton.addEventListener('click', function() {
-        
-        // console.log('You clicked the team one button')
-        teamOneShots.innerText = (oneShots = oneShots + 1)
-        
-        let x = Math.random()
-        // console.log(x)
-        if (x > 0.5) {
-            teamOneGoals.innerText = (oneGoals = oneGoals + 1)
-        }
-    })
-
-    teamTwoButton.addEventListener('click', function() {
-        
-        // console.log('You clicked the team one button')
-        teamTwoShots.innerText = (twoShots = twoShots + 1)
-        
-        let x = Math.random()
-        console.log(x)
-        if (x > 0.5) {
-            teamTwoGoals.innerText = (twoGoals = twoGoals + 1)}
-    })
-
 })
-}
-
 // Button One Events
 
-{
-    let oneShots = 0
-    let oneGoals = 0
+
+    oneShots = 0
+    oneGoals = 0
     teamOneButton.addEventListener('click', function() {
         
         // console.log('You clicked the team one button')
@@ -75,21 +48,21 @@ resetButton.addEventListener('click', function() {
             teamOneGoals.innerText = (oneGoals = oneGoals + 1)
         } 
     })
-}
+
 
 // Button Two Events
 
-{
-    let twoShots = 0
-    let twoGoals = 0
+
+    twoShots = 0
+    twoGoals = 0
     teamTwoButton.addEventListener('click', function() {
         
         // console.log('You clicked the team one button')
         teamTwoShots.innerText = (twoShots = twoShots + 1)
         
         let x = Math.random()
-        console.log(x)
+        // console.log(x)
         if (x > 0.5) {
             teamTwoGoals.innerText = (twoGoals = twoGoals + 1)}
     })
-}
+
